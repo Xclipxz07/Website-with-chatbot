@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>XCLIPXZ'S Website with Chatbot</title>
+<style>
+body { font-family: Arial; background:#f5f5f5; margin:0; padding:0;}
+header { background:#4a90e2; color:#fff; padding:20px; text-align:center;}
+.container { max-width:900px; margin:20px auto; background:#fff; padding:20px; border-radius:10px;}
+#chatbox { height:300px; overflow-y:scroll; background:#fafafa; padding:10px; border:1px solid #ccc;}
+</style>
+</head>
+<body>
+<header><h1>XCLIPXZ Website</h1></header>
+<div class="container">
+<h2>Chatbot</h2>
+<div id="chatbox"></div>
+<input id="userInput" />
+<button onclick="sendMessage()">Send</button>
+</div>
+<script>
+function botReply(m){
+ const s=m.toLowerCase();
+ if(s.includes("hello"))return "Hello!";
+ if(s.includes("help"))return "How can I assist?";
+ if(s.includes("hi"))return "HI I'm A.I.R.A Mr. Prabhat's website chatbot ,im still learning things so you are open to teach me anything";
+ return "Still learning!";
+}
+function sendMessage(){
+ const i=document.getElementById("userInput");
+ const c=document.getElementById("chatbox");
+ if(!i.value.trim())return;
+ c.innerHTML+=`<p><b>You:</b> ${i.value}</p>`;
+ c.innerHTML+=`<p><b>Bot:</b> ${botReply(i.value)}</p>`;
+ i.value="";
+ c.scrollTop=c.scrollHeight;
+}
+</script>
+</body>
+</html>
