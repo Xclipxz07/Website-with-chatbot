@@ -23,9 +23,8 @@ It can be hosted locally or on GitHub Pages.
 ## ▶️ How to Run
 
 ### **Option 1 — Run Locally**
-1. Download the ZIP file and extract it.
-2. Open `index.html` by double‑clicking it.
-3. Website runs instantly in your browser.
+1. Open `index.html` by double‑clicking it.
+2. Website runs instantly in your browser.
 
 ---
 
@@ -35,7 +34,7 @@ It can be hosted locally or on GitHub Pages.
    - `index.html`
 3. Go to:
    **Settings → Pages → Deploy from root**
-4. Your website will go live instantly.
+4. The website will go live instantly.
 
 ---
 
